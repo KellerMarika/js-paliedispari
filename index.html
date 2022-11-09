@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>palindroma + pari e dispari</title>
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    
+
+    <section id="palindromia" class="bg-primary bg-opacity-25">
+        <div class="container mt-5 p-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-8">
+
+                    <h5 class="pb-3">Il palindromo è una sequenza di caratteri che, letta al contrario, rimane invariata
+                    </h5>
+
+                    <form action="get" class="input-group pb-3 ">
+                        <label for="palindrome" class=""></label>
+                        <input type="text" id="palindrome" name="palindrome" class="form-control"
+                            placeholder="inserisci una parola..." aria-label="Recipient's username"
+                            aria-describedby="palindrome-btn">
+                        <button class="btn btn-outline-secondary bg-light fw-bold" type="button"
+                            id="palindrome-btn">...e scopri
+                            se è un
+                            palindromo!</button>
+                    </form>
+                    <div class="palindrome-result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pari_dispari" class="bg-primary bg-opacity-25">
+        <div class="container mt-5 p-5">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <h5 class="pb-3">meh
+                    </h5>
+
+                    <form action="get" class="text-center input-group pb-3 ">
+
+                        <div class="input-group">
+                            <div class="input-group-text border-dark  fw-bold text-dark opacity-75">
+                                <input class="form-check-input mt-0 " type="radio" name="even_odd-radio"  value="pari"
+                                    aria-label="Radio button for following text input">
+                                PARI
+                            </div>
+                            <div class="input-group-text border-dark text-dark opacity-75  fw-bold">
+                                <input class="form-check-input mt-0" type="radio"name="even_odd-radio" value="dispari"
+                                    aria-label="Radio button for following text input">
+                                DISPARI
+                            </div>
+                            <input  type="number" class="form-control" aria-label="Text input with radio button"
+                                placeholder="scegli un numero da 1 a 5">
+                                <button  class="btn btn-outline-secondary bg-light fw-bold" type="button"
+                                id="evenOdd-btn">fai click per scoprire se hai vinto!</button>
+                        </div>
+                    </form>
+                    <div class="pari_dispari-result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 <script src="/main.js"></script>
+
 </html>
